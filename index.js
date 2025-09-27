@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 
 });
 
-app.get("verify/:id", async (req, res) => {
+app.get("/verify/:id", async (req, res) => {
     const {id} = req.params;
     const certificate  = await mongoose.model("Certificate").findOne({certificateId: id});
     if(!certificate) {
