@@ -43,7 +43,7 @@ app.get("/verify/:id", async (req, res) => {
 });
 
 // ✅ Proper MongoDB connection
-mongoose.connect("mongodb+srv://Aaron2405:Playstore8050@arun.spq1bw3.mongodb.net/Infosys", {
+mongoose.connect("mongodb+srv://Aaron2405:HU6tf72y3QakQimf@arun.spq1bw3.mongodb.net/Infosys", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
