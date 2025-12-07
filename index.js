@@ -16,20 +16,7 @@ import Certificate from "./Model/certificate.js";
 
 
 app.get("/", (req, res) => {
-    const certificate = {
-        isuedOn: new Date(),
-        issuedTo: "John Doe",
-        courseName: "Full Stack Development",
-        completedOn: new Date("2023-12-31"),
-    }
-    
-   Certificate.create(certificate)
-   .then(doc => {
-    res.json(doc);
-   })
-   .catch(err => {
-    res.status(500).send("Error creating certificate");
-   });
+    res.send("Server is running")
 
 });
 
